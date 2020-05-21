@@ -19,13 +19,11 @@ function checkPodcast(valor) {
     if (podTemp) {
         if (podcast === null) {
             toggleVisibility($('notPodcast'), $('foundPodcast'));
-
             changePodcast(podTemp);
         } 
     } else {
         if (podcast !== null) {
             podcast = null;
-
             toggleVisibility($('foundPodcast'), $('notPodcast'));
         }
     }
@@ -47,7 +45,6 @@ function changePodcast(selectedPodcast) {
     
     replaceValue($('title'), `[${podcast.frequency}] ${podcast.title}`);
     replaceValue($('description'), podcast.description);
-
     $('image').src = `./img/${podcast.id}.png`;
 }
 
@@ -55,4 +52,3 @@ function replaceValue(input, newValue) {
     input.firstChild.remove();
     input.append(newValue);
 }
-

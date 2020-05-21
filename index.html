@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Podcasts</title>
+</head>
+<body>
+    <div class="container center">
+        <div class="title">
+            <h1>Podcasts</h1>
+        </div>
+
+        <div class="labelBox">
+            <input type="text" value="87.5" name="frequencyText" id="frequencyText" class="frequencyText" readonly>
+        </div>
+
+        <div class="rangeBox">
+            <input type="range" value="87.5" min="87.5" max="103.5" step="0.1" name="frequency" id="frequency" class="frequency">
+        </div>
+
+        <div class="podcastBox">
+            <div id="notPodcast" class="notPodcast visible">
+                <h4>Nenhum Podcast</h4> 
+            </div>
+            <div id="foundPodcast" class="foundPodcast invisible">
+                <img id="image" src="./img/1.png" height="50" width="50" />
+                <h4 id="title">[93.7] Título</h4>
+                <p id="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus quisquam tempore ratione voluptates aperiam incidunt, aspernatur laudantium dolor quas. Dolorum placeat commodi ab ad aliquam consequuntur incidunt fugit ullam quo!</p>                
+            </div>
+        </div>
+    </div>
+    
+    <script src="./js/podcasts.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
